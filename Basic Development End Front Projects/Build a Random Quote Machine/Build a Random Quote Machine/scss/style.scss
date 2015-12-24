@@ -1,0 +1,40 @@
+@import "bourbon";
+@import "neat";
+
+body {
+  text-align: center;
+  background-color: #222;
+  font-family: $helvetica;
+
+}
+
+h1 {
+  color: gray;
+}
+
+.random-quote {
+  margin: 2em 0;
+  color: gray;
+  
+  #quote {
+    font-size: 1.2em;
+  }
+  
+  #author {
+    color: tint(gray, 70);
+    text-transform: lowercase;
+    font-weight: 100;
+    font-size: .9em;
+    padding-top: 0.5em;
+  }
+}
+
+button {
+  outline: 0;
+ @include button;
+  
+  &:active {
+    @include transform(translateY(2px));
+
+  }
+}
